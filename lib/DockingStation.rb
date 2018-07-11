@@ -2,9 +2,7 @@
 class DockingStation
 
   def release_bike
-    return 0
+    return Bike.new
   end
 
 end
-
-#DockingStation.respond_to?(:release_bike)

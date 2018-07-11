@@ -1,9 +1,10 @@
 require 'Bike'
 
 describe 'Bike' do
-
-    it 'working?' do
-      expect(Bike.new).to respond_to(:working?)
-    end
+  bike = Bike.new
+  it 'working?' do
+    expect(bike).to respond_to(:working?)
+    expect(bike.working?).to eq(true)
+  end
 
 end
