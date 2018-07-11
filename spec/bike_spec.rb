@@ -7,4 +7,8 @@ describe 'Bike' do
     expect(bike.working?).to eq(true)
   end
 
+  it 'dock' do
+    expect(bike).to respond_to(:dock)
+  end
+
 end

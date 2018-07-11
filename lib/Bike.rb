@@ -4,4 +4,7 @@ class Bike
     return true
   end
 
+  def dock
+
+  end 
 end
