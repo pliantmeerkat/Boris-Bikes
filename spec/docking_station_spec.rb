@@ -8,6 +8,6 @@ describe 'DockingStation' do
   end
 
   it 'releases a bike' do
-    expect(DockingStation.new.release_bike).to eq(0)
+    expect(DockingStation.new.release_bike).to_not eq(nil)
   end
 end
