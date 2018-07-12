@@ -21,4 +21,9 @@ describe 'DockingStation' do
 
   end
 
+  describe '#release_bike' do
+    it 'raises an error when there are now bikes' do
+      expect(dock.release_bike).to raise_error 'No bikes availible'
+    end
+  end
 end
