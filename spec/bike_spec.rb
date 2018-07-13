@@ -1,14 +1,14 @@
-require 'Bike'
+require './lib/Bike'
 
-describe 'Bike' do
-  bike = Bike.new
+describe Bike do
+
   it 'working?' do
-    expect(bike).to respond_to(:working?)
-    expect(bike.working?).to eq(true)
+    expect(subject).to respond_to(:working?)
+    expect(subject.working?).to eq(true)
   end
 
   it 'dock' do
-    expect(bike).to respond_to(:dock)
+    expect(subject).to respond_to(:dock)
   end
 
 end
